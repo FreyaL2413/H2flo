@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - H2Flo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <style>
+        .about-section {
+            padding: 8rem 5% 5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .about-text h2 {
+            color: var(--baby-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        .team-section {
+            background-color: var(--light-pink);
+            padding: 4rem 5%;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-member {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 2px solid var(--baby-blue);
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            border-color: var(--baby-pink);
+        }
+
+        .team-member h3 {
+            color: var(--baby-blue);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .team-member p {
+            color: var(--baby-pink);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">H2<span class="cursive">flo</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="goals.html">Our Goals</a></li>
+        </ul>
+    </nav>
+
+    <main class="about-section">
+        <div class="about-content">
+            <div class="about-text" style="grid-column: 1 / -1; max-width: 800px; margin: 0 auto;">
+                <h2>Our Story</h2>
+                <p>H2flo is a group of 6th graders passionate about the UNSDG goal #10 (clean water and sanitation). Our school gave us the amazing opportunity of doing a school project on it.</p>
+                <p>Our kit features a water filter to get rid of the dirt and rocks, and then an eco tab to kill the bacteria.</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="team-section">
+        <h2 style="text-align: center; color: #2c5282; margin-bottom: 3rem;">Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <h3>Freya L</h3>
+                <p>Finance Director</p>
+            </div>
+            <div class="team-member">
+                <h3>Rena W</h3>
+                <p>Supply Chain Manager</p>
+            </div>
+            <div class="team-member">
+                <h3>Marion J</h3>
+                <p>Marketing Specialist</p>
+            </div>
+            <div class="team-member">
+                <h3>Ayana K</h3>
+                <p>Sales Representative</p>
+            </div>
+            <div class="team-member">
+                <h3>Riya D</h3>
+                <p>Sales Representative</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 H2Flo. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

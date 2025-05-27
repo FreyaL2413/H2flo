@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - H2Flo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <style>
+        .products-section {
+            padding: 8rem 5% 5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .product-header h1 {
+            color: var(--baby-blue);
+            margin-bottom: 1rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 2px solid var(--baby-blue);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--baby-pink);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 2rem;
+        }
+
+        .product-info h2 {
+            color: var(--baby-blue);
+            margin-bottom: 1rem;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .features-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .features-list li:before {
+            content: "✓";
+            color: var(--baby-pink);
+            position: absolute;
+            left: 0;
+        }
+
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+
+        .specs-table th, .specs-table td {
+            padding: 0.75rem;
+            border: 1px solid var(--baby-blue);
+            text-align: left;
+        }
+
+        .specs-table th {
+            background-color: var(--light-blue);
+            color: var(--baby-blue);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">H2<span class="cursive">flo</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="goals.html">Our Goals</a></li>
+        </ul>
+    </nav>
+
+    <main class="products-section">
+        <div class="product-header">
+            <h1>Our Water Filtration System</h1>
+            <p>Advanced technology for clean, safe drinking water</p>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1581093458791-9d15482442f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Water Filtration System" class="product-image">
+                <div class="product-info">
+                    <h2>EcoWater Filter Pro</h2>
+                    <p>Our flagship water filtration system combines advanced filtration technology with eco-friendly solutions.</p>
+                    
+                    <ul class="features-list">
+                        <li>Multi-stage filtration process</li>
+                        <li>Eco-friendly materials</li>
+                        <li>Bacteria elimination system</li>
+                        <li>Easy maintenance</li>
+                        <li>Long-lasting filters</li>
+                    </ul>
+
+                    <table class="specs-table">
+                        <tr>
+                            <th>Specification</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>Filtration Capacity</td>
+                            <td>1000 liters per filter</td>
+                        </tr>
+                        <tr>
+                            <td>Filter Life</td>
+                            <td>6 months</td>
+                        </tr>
+                        <tr>
+                            <td>Flow Rate</td>
+                            <td>2 liters per minute</td>
+                        </tr>
+                        <tr>
+                            <td>Dimensions</td>
+                            <td>30 x 20 x 15 cm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 H2Flo. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
